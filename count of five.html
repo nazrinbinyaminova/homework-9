@@ -1,0 +1,29 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+<script>
+var n=Number(prompt("n")),
+    m,count=0;
+if ((n<10000)&&(n>0)) {
+  while(n>0) {
+    m=n%10;
+    if((m%5)===0) {
+      count++;
+    }
+  n=Math.floor(n/10);
+  }
+  console.log(count);
+}else {
+  console.log("Re-enter n");
+}
+</script>
+
+</body>
+
+</html>
